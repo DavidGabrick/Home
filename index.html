@@ -2,62 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Your Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Gabrick | Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
-
-    body { background: #ffffff; color: #0a0a0a; line-height: 1.6; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
 
     nav {
       position: fixed;
       width: 100%;
       top: 0;
-      background: rgba(0,0,0,0.8);
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: center;
-      gap: 40px;
+      background: white;
+      border-bottom: 1px solid #eee;
       padding: 15px 0;
+      text-align: center;
     }
 
-    nav a { color: #aaa; text-decoration: none; font-size: 0.9rem; }
-    nav a:hover { color: white; }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 100px 20px;
+    }
 
     .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
+      padding-top: 120px;
     }
 
-    .hero h1 { font-size: 3.5rem; }
-    .hero p { color: #aaa; }
-
-    section {
-      padding: 100px 10%;
-      max-width: 1000px;
-      margin: auto;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    h2 {
+      margin-top: 60px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
     }
 
-    footer {
-      text-align: center;
-      padding: 40px;
-      color: #666;
+    p {
+      color: #444;
+    }
+
+    .project {
+      border: 1px solid #eee;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .project:hover {
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transform: translateY(-3px);
+    }
+
+    .project h3 {
+      margin: 0 0 10px 0;
+    }
+
+    .contact {
+      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
 
 <nav>
@@ -66,33 +89,45 @@
   <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero">
-  <h1>David Gabrick</h1>
+<div class="container hero">
+  <h1>Your Name</h1>
   <p>Mechanical Engineering Student | CAD | Design</p>
 </div>
 
-<section id="about">
-  <h2>About Me</h2>
+<div class="container" id="about">
+  <h2>About</h2>
   <p>
-    Mechanical engineering student focused on CAD design and product development.
+    I am a mechanical engineering student focused on product design, CAD modeling,
+    and engineering problem-solving. I enjoy building real-world projects and
+    improving designs through iteration.
   </p>
-</section>
+</div>
 
-<section id="projects">
+<div class="container" id="projects">
   <h2>Projects</h2>
-  <div class="projects">
-    <!-- Add projects later -->
-  </div>
-</section>
 
-<section id="contact">
+  <div class="project">
+    <h3>SolidWorks Gearbox Design</h3>
+    <p>
+      Designed and assembled a functional gearbox using SolidWorks, including
+      detailed part modeling and motion considerations.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Robotic Arm</h3>
+    <p>
+      Built and programmed a robotic arm capable of basic pick-and-place tasks.
+    </p>
+  </div>
+
+</div>
+
+<div class="container" id="contact">
   <h2>Contact</h2>
   <p>Email: your@email.com</p>
-</section>
-
-<footer>
-  © 2026 David Gabrick
-</footer>
+  <p>LinkedIn: your-link</p>
+</div>
 
 </body>
 </html>
